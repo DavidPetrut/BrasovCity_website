@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Brasov Tourism - Booking</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" defer></script>
+    </head>
+    <body>
+
+         <!--   Here is the navbar for all pages-->
+
+        <header class="first-header">
+            <nav class="header-nav navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="booking.html"></a>BOOK NOW</li>
+                    <li><a href="descover.html">DISCOVER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <h2 style="color:white ;" class="sec-head">Create your own dream holiday by combining what you want</h2>
+        </header>
+
+ <!--   First I wrap all in a sectopn attribute, then I wrap them in divs that contain classes for stylyng and to add a little defoult margin beetwwen the images and descriptions
+    The ideea of this concept is that javascript create a new div using our already done divs in html, and populates the Transaction list.
+    Using getElementByClass, we bring the picture, content, and the button down the list so we can work with it
+    -->
+
+        <section class="box text-sec">
+            <h2 class="sec-head">ACTIVITIES</h2>
+            <div class="store-products">
+                <div class="store-product">
+                    <span class="store-product-name">HIKING</span>
+                    <img class="store-product-image" src="images/aboutus.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$29.99</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                </div>
+                <div class="store-product">
+                    <span class="store-product-name">AMAZING VIEW</span>
+                    <img class="store-product-image" src="images/picture1.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$39.99</span>
+                        <button class="buttn button-prime store-product-button"type="button">ADD NOW</button>
+                    </div>
+                </div>
+                <div class="store-product">
+                    <span class="store-product-name">GUID</span>
+                    <img class="store-product-image" src="images/picture3.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$15.50</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        
+        <section class="box text-sec">
+            <h2 class="sec-head">FOOD</h2>    
+            <div class="store-products">
+                <div class="store-product">
+                    <span class="store-product-name">BREAKFAST</span>
+                    <img class="store-product-image" src="images/breakfast.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$5.99</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                </div>
+                <div class="store-product">
+                    <span class="store-product-name">Dinner</span>
+                    <img class="store-product-image" src="images/salata.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$11.99</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                </div>
+                <div class="store-product">
+                    <span class="store-product-name">DESERT</span>
+                    <img class="store-product-image" src="images/semla.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$2.99</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                  </div>
+              </div>
+        </section>
+        <section class="box text-sec">
+            <h2 class="sec-head">ROOMS</h2>
+            <div class="store-products">
+                <div class="store-product">
+                    <span class="store-product-name">HOTEL</span>
+                    <img class="store-product-image" src="images/hotel.jpeg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$48.50</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                </div>
+                <div class="store-product">
+                    <span class="store-product-name">LOCAL RENT</span>
+                    <img class="store-product-image" src="images/flori.jpg">
+                    <div class="store-product-details">
+                        <span class="store-product-price">$32.00</span>
+                        <button class="buttn button-prime store-product-button" type="button">ADD NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!--   This section will get populated with new divs copyed from the content above so the Transaction list will be populate-->
+        <section class="box text-sec">
+            <h2 class="sec-head">REVIEW YOUR TRANSACTIONS</h2>
+            <div class="basket-row">
+                <span class="basket-product basket-header basket-column">PRODUCT</span>
+                <span class="basket-price basket-header basket-column">PRICE</span>
+                <span class="basket-quantity basket-header basket-column">QUANTITY</span>
+            </div>
+            <div class="basket-products">
+                
+               
+            </div>
+            <div class="basket-total">
+                <strong class="basket-total-name">Total</strong>
+                <span class="basket-total-price">$0</span>
+            </div>
+            <button class="buttn button-prime button-shoppings-done" type="button">BUY NOW</button>
+        </section>
+
+ <!--   Just as normal the footer with the socialss-->
+
+        <footer class="footer-bottom-first">
+            <div class="box foot-cont">
+                <p style="padding: 10px;">Brasov S.T inc. All rights Reserved &copy; <br> Please check OUR Terms & Conditions</p>
+                <h3 style="font-weight: bold; color: white; font-size: 35px; padding-left: 20px;">Vizit now Brasov! Follow us on Social Media!</h3>
+                <br>
+                <ul class="navigation navigation-of-footer">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/s1.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com" target="_blank">
+                            <img src="images/s2.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/s4.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brasov Tourism - About</title>
+        <meta name="description" content="description">
+        <link rel="stylesheet" href="styles.css" />
+
+         <!--   Some internalCss just for coursework tasks purposes,to show that I can do that as well if needed-->
+            <style>
+                * {
+                    color: black;
+                    font-weight: bold;
+                }
+            </style>
+    </head>
+    <body>
+
+         <!--   Same navbar-->
+        <header class="first-header">
+            <nav class="navigation header-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="booking.html">BOOK NOW</a></li>
+                    <li><a href="descover.html">DISCOVER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </header>
+         <!--   I excluded the big h1 header, and replace it with something smaller for a smoth lock-->
+        <section class="text-sec box" id="contact-section">
+            <h2 class="sec-head">We are waiting to organize your vacations!</h2>   
+            
+             <!--   I had to put a form tag so the submit button will actually simulate a submission
+            And here is a very simple contact form, very basic but I did not have to much inspiration to be honest.
+        Ir works very well on pc but not very good on Phones-->
+           <form action="" method="GET" enctype="multipart/form-data">
+    <div class="main-div-form">
+        <div class="form-element">
+            <label for="name">Name</label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                
+                 <!--   Few tags have required atribute so people can`t submit it without actually to complete it-->
+
+                
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                
+                
+                <div class="form-element">
+                    <label for="age">Birthdate</label>
+                    <input type="date" name="age" id="age" min="2020-06-10">
+                </div>
+                
+
+              <div class="form-element">
+                  <span class="span-form">How do you wish yo be contacted</span>
+                  <br>
+                  <div class="contact-checkbox">
+                      <label for="Phone">Phone</label>
+                      <input type="checkbox" name="Phone" id="Phone">
+                    </div>
+                    <div class="contact-checkbox">
+                        <label for="Email">Email</label>
+                        <input type="checkbox" name="Email" id="Email">
+                    </div>
+                </div>
+                <br>
+                <div class="form-element">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                
+                <div class="form-element">
+                    <label class="massage-form" for="massage">Write us</label>
+                    <br>
+                    <textarea id="massage" name="massage"></textarea>
+                </div>
+            </div>
+                
+                <button class="button-form" id="reset-button" type="reset">Reset</button>
+                <button class="button-form" type="submit">Submit</button>
+            </form>
+            
+             <!--   Here is the footer like in all pages with the socials-->
+            
+        </section>
+        
+        <footer class="footer-bottom-first">
+            <div class="box foot-cont">
+                <p style="padding: 10px;">Brasov S.T inc. All rights Reserved &copy; <br> Please check OUR Terms & Conditions</p>
+                <h3 style="font-weight: bold; color: white; font-size: 35px; padding-left: 20px;">Vizit now Brasov! Follow us on Social Media!</h3>
+                <br>
+                <ul class="navigation navigation-of-footer">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/s1.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com" target="_blank">
+                            <img src="images/s2.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/s4.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
+
